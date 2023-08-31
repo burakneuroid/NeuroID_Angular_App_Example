@@ -54,7 +54,7 @@
     </div>
     <div class="form-container">
         <form action="/submit" method="post">
-            <div>    <p id="uuidLabel" font-size="13pt">NeuroID - UserId will be here</p></div>
+            <span id="uuidLabel">NeuroID UserId: {{ myUuid }}<br/>Form Id: {{ formId }}</span>
             <div class="form-field">
                 <label for="firstName">First Name</label>
                 <input type="text" name="firstName" id="firstName" required>
@@ -81,7 +81,4 @@
         </form>
     </div>
 </body>
-</html>
-<script>       
-       document.getElementById('uuidLabel').innerHTML = "NeuroID UserId: " + myUuid + "<br/>Form Id:form_bulbs620";
-</script>
+</html> 

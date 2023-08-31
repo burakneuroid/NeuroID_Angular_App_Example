@@ -8,16 +8,13 @@ declare const nid: any; // Declare the NeuroID function
   styleUrls: ['./form-demo.component.css']
 })
 export class FormDemoComponent implements OnInit {
-
+  public myUuid?: string;
   public formId: string = 'form_adopt022';
 
   constructor(private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit(): void {
-    this.initNeuroIDScript();
-    
-    var myUuid = this.uuidv4();
-    console.log("NeuroID UserId:", myUuid);
+    this.initNeuroIDScript(); 
   }
 
   uuidv4() {
@@ -34,8 +31,18 @@ export class FormDemoComponent implements OnInit {
     s.type = 'text/javascript';
     s.src = 'https://scripts.neuro-id.com/c/nid-adopt022-test.js';
     s.async = true;
-    this.renderer.appendChild(this.el.nativeElement.ownerDocument.body, s);
     
-    nid('setDebug',true);
+    s.onload = () => {
+      this.myUuid = this.uuidv4();
+      console.log(this.myUuid);
+      nid('identify',this. myUuid);
+      nid('setDebug',true);
+      console.log("NeuroID UserId:", this.myUuid);
+      };
+  
+    this.renderer.appendChild(this.el.nativeElement.ownerDocument.body, s);
+
+    
+    
   }
 }
