@@ -35,7 +35,7 @@ export class FormDemoComponent implements OnInit {
     s.onload = () => {
       this.myUuid = this.uuidv4();
       console.log(this.myUuid);
-      nid('identify',this. myUuid);
+      nid('identify',this.myUuid);
       nid('setDebug',true);
       console.log("NeuroID UserId:", this.myUuid);
       };
