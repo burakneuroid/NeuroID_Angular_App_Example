@@ -6,11 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-DISCLAIMER: We've prepared a general guide to assist you in creating Angular Sample app. Please note that this guide is shared as a courtesy and is not part of our official documentation or support. The guide and any associated sample code are shared under the MIT License.
-
-This means they are provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the guide or the use of or other dealings in the guide.
-
-By using this guide and associated sample code, you accept these terms and agree that Neuro-ID is not responsible for any issues or liabilities arising from your use of the guide or associated sample code.
+DISCLAIMER:We've prepared a basic sample app to help you to integrate NeuroID Javascript Library into your Angular app. Keep in mind, this guide is provided as a goodwill gesture and isn't included in our formal documentation or support. Both the guide and any related sample code are distributed under the MIT License.
 
 MIT License
 
