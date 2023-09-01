@@ -8,7 +8,7 @@ Run `ng build`
 
 ## Step 2
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` 
 
 ## NeuroID JS Library Implemented in the /src/app/form-demo/form-demo.component.ts
 
