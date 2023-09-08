@@ -29,7 +29,7 @@ export class FormDemoComponent implements OnInit {
     // Using Renderer2 for DOM manipulations
     const s = this.renderer.createElement('script');
     s.type = 'text/javascript';
-    s.src = 'https://scripts.neuro-id.com/c/nid-adopt022-test.js';
+    s.src = 'https://scripts.neuro-id.com/c/nid-{site_id}-test.js'; // Please add your SITE ID - should look like this https://scripts.neuro-id.com/c/nid-panda123-test.js
     s.async = true;
     
     s.onload = () => {
